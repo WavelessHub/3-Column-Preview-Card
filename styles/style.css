@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: Lexend Deca;
+
+  height: 97vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section-sedan,
+.section-suv,
+.section-luxury {
+  padding: 40px;
+}
+
+.section-sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.section-suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.section-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.icon {
+  margin-bottom: 24px;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+
+  font-family: Big Shoulders Display;
+  font-size: 40px;
+
+  margin-bottom: 24px;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  width: 200px;
+  line-height: 26px;
+  margin-bottom: 70px;
+}
+
+.learn-more-sedan,
+.learn-more-suv,
+.learn-more-luxury {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 100px;
+  padding: 12px 24px;
+
+  transition: all 0.15s;
+}
+
+.learn-more-sedan:hover,
+.learn-more-suv:hover,
+.learn-more-luxury:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+.learn-more-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.learn-more-suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.learn-more-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    margin-top: 400px;
+    margin-bottom: 400px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
